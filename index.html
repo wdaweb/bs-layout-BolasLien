@@ -9,11 +9,82 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="./css/bootstrap.css">
 
-    <title>Hello, world!</title>
+    <title>Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            font-family: 'Noto Sans TC', 'Microsoft JhengHei', sans-serif;
+        }
+
+        body {
+            background: #eee;
+        }
+
+        .imgbox img {
+            object-fit: contain;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+    </style>
 </head>
 
 <body>
-    <h1 class="bg-primary">Hello, world!</h1>
+    <!-- top -->
+    <div class="container">
+        <div class="row w-100">
+            <div class="col-sm-6 col-12">
+                <h2>LOGO</h2>
+            </div>
+            <div class="col-sm-6 col-12 bg-danger">
+                <div class="row">
+                    <div class="col-3">Home</div>
+                    <div class="col-3">Feature</div>
+                    <div class="col-3">Works</div>
+                    <div class="col-3">Contact</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- content -->
+    <div class="container m-5 p-5">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-12">
+                <div class="imgbox m-4 d-flex justify-content-center" style="object-fit: cover;">
+                    <img src="https://picsum.photos/400/400/?random=1" class="img-fluid">
+                </div>
+            </div>
+            <div class="col-12 m-2 d-flex justify-content-center">
+                <h2>Bootstrap Layout</h2>
+            </div>
+            <div class="col-12 m-2 d-flex justify-content-center">
+                <h6>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias reprehenderit ipsum accusantium!
+                    Iure sunt maiores voluptatem omnis, vel atque, perferendis mollitia tenetur dolore consectetur dicta
+                    nobis enim quos ullam aliquam eos libero sed rem velit minus id? Necessitatibus inventore nostrum
+                    blanditiis natus, voluptatibus adipisci! Asperiores dolorem nisi</h6>
+            </div>
+            <div class="col-12 d-flex justify-content-center">
+                <h2><a href="#" class="badge badge-dark">Learn More</a></h2>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="container fixed-bottom">
+        <footer>Design by BolasLien</footer>
+    </div>
+
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
